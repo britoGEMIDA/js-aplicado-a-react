@@ -15,9 +15,11 @@
     // Imutabilidade (não muda)
 
 
+const bandas = ['Metalica', 'Guns n Roses','RHCP']
+const maisbandas = [...bandas, 'Charlie Brown Jr', 'Mega Death']
 
-    //1ª Digitação (aqui) 
 
+    
 
 
     exibirNaTela(maisbandas);
@@ -26,9 +28,24 @@
 
     // Spread com objeto
 
+    const dados = {
+      nome: 'Viviane',
+      idade: 21
+    };
+
+    const novosDados = {
+      ...dados,
+      cidade:'São Paulo',
+      estado:'SP',
+      idade: 25 //sobrescrevendo o valorsomento da idade
+
+    }
 
 
-    //2ª Digitação (aqui) 
+
+   exibirNaTela(dados);
+   exibirNaTela(novosDados);
+   exibirNaTela(novosDados.idade);
 
 
 

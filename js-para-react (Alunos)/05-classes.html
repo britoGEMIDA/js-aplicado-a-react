@@ -64,7 +64,7 @@ class Pessoa {
     umaPessoa.genero = 'Maria';
     umaPessoa.idade = 25;
 
-    exibirNaTela(outr)
+    exibirNaTela(outraPessoa);
     
     
 
@@ -76,13 +76,17 @@ class Pessoa {
 
     // Objeto herdando recursos
 
+    let aluno = new Aluno;
+    aluno.nome = 'Vitória';
+    aluno.genero = 'feminino';
+    aluno.matricula = '123abc';
+    aluno.curso = 'JS par React';
+    aluno.idade = 25;
 
-
-
-     //3ª Digitação (aqui) 
-
-
-
+    exibirNaTela(aluno.nome);
+    exibirNaTela(aluno.idade);
+    exibirNaTela(aluno.verificaIdade());
+  
 
     // Console.log(aluno)
     aluno.mostraDados();
