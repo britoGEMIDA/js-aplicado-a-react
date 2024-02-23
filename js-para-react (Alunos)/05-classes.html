@@ -10,9 +10,23 @@
 
   <script>
 
+class Pessoa {
+  nome = 'sem nome';
+  genero = 'não informado'
+  idade;
+  Métodos
+  mostraGenero() {
+    exibirNaTela(this.genero)
+  }
+  mostraNome() {
+    exibirNaTela(this.nome);
+  }
+  verificaIdade() {
+    return this.idade >=18 ? 'é maior' : 'é menor';
+  }
+}
 
-
-    //1ª Digitação (aqui) 
+    
 
 
 
@@ -33,11 +47,29 @@
       }
     }
 
+
+
+
     // Criando objetos/ instâncias
 
+    let umaPessoa = new Pessoa;
+    umaPessoa.nome = 'Checo Perez';
+    umaPessoa.genero = 'masculino';
+    umaPessoa.idade = '30';
+
+    exibirNaTela(umaPessoa)
 
 
-    //2ª Digitação (aqui) 
+    let outraPessoa = new Pessoa;
+    umaPessoa.genero = 'Maria';
+    umaPessoa.idade = 25;
+
+    exibirNaTela(outr)
+    
+    
+
+
+
 
 
 
